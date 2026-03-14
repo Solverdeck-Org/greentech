@@ -3,6 +3,7 @@ import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import Hero from '@/components/landing/Hero';
 import Features from '@/components/landing/Features';
+import Solutions from '@/components/landing/Solutions';
 
 export default function LandingPage() {
   // Data definitions
@@ -30,6 +31,23 @@ export default function LandingPage() {
     ]
   };
 
+  const solutionsData = [
+  { 
+    category: "Energy Management", 
+    title: "Track consumption across all facilities", 
+    description: "Get granular visibility into your energy usage. Our platform integrates directly with your smart meters to provide real-time data and anomaly alerts.",
+    imageSrc: "/solution-1.png",
+    href: "/solutions/energy-management" // The actual route
+  },
+  { 
+    category: "Carbon Accounting", 
+    title: "Automate your scope 1, 2, and 3 emissions", 
+    description: "Stop relying on manual spreadsheets. Greentech automatically calculates your carbon footprint based on standardized global emission factors.",
+    imageSrc: "/solution-2.png",
+    href: "/solutions/carbon-accounting" // The actual route
+  }
+];
+
   const footerLinks = [
     { label: 'Privacy Policy', href: '/privacy' },
     { label: 'Terms of Service', href: '/terms' },
@@ -44,6 +62,7 @@ export default function LandingPage() {
         <Features title={featuresData.title} features={featuresData.items} />
       </main>
       <Footer appName={appName} links={footerLinks} />
+      <Solutions title="Tailored for your industry" subtitle="Everything you need to reach Net-Zero." solutions={solutionsData} />
     </div>
   );
 }
