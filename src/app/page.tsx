@@ -61,8 +61,8 @@ export default function LandingPage() {
         <Hero content={heroContent} />
         <Features title={featuresData.title} features={featuresData.items} />
       </main>
-      <Footer appName={appName} links={footerLinks} />
       <Solutions title="Tailored for your industry" subtitle="Everything you need to reach Net-Zero." solutions={solutionsData} />
+      <Footer appName={appName} links={footerLinks} />
     </div>
   );
 }
