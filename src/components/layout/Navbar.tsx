@@ -20,7 +20,7 @@ export default function Navbar({ appName, links }: NavbarProps) {
     <nav className="relative bg-white border-b border-gray-100">
       <div className="flex items-center justify-between px-6 py-4 max-w-7xl mx-auto">
         <div className="flex items-center gap-2">
-          {/* Greentech Logo Placeholder */}
+          {/* Carbonbox Logo Placeholder */}
           <div className="w-8 h-8 bg-green-600 rounded-md"></div>
           <span className="text-xl font-bold text-gray-900">{appName}</span>
         </div>

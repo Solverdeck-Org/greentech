@@ -22,7 +22,7 @@ const solutionsDB: Record<string, any> = {
   'carbon-accounting': {
     category: "Carbon Accounting",
     headline: "Automate your complete path to Net-Zero.",
-    description: "Stop wrestling with manual spreadsheets. Greentech automatically calculates your Scope 1, 2, and 3 emissions using standardized global emission factors, turning complex supply chain data into actionable insights.",
+    description: "Stop wrestling with manual spreadsheets. Carbonbox automatically calculates your Scope 1, 2, and 3 emissions using standardized global emission factors, turning complex supply chain data into actionable insights.",
     imageSrc: "/solution-2.jpg",
     benefits: [
       "Comprehensive Scope 1, 2 & 3 tracking",
@@ -34,7 +34,7 @@ const solutionsDB: Record<string, any> = {
 };
 
 // 2. We need the same layout data for the Navbar and Footer
-const appName = "Greentech";
+const appName = "Carbonbox";
 const navLinks = [
   { label: 'Features', href: '/#features' },
   { label: 'Solutions', href: '/#solutions' },
@@ -108,7 +108,7 @@ export default function SolutionDetail({ params }: { params: { slug: string } })
                     <div>
                       <h3 className="text-xl font-semibold text-gray-900">{benefit}</h3>
                       <p className="text-gray-600 mt-1">
-                        Seamlessly integrated into the Greentech ecosystem to keep your team focused on execution, not data entry.
+                        Seamlessly integrated into the Carbonbox ecosystem to keep your team focused on execution, not data entry.
                       </p>
                     </div>
                   </div>

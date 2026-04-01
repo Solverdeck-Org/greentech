@@ -7,7 +7,7 @@ import Solutions from '@/components/landing/Solutions';
 
 export default function LandingPage() {
   // Data definitions
-  const appName = "Greentech";
+  const appName = "Carbonbox";
 
   const navLinks = [
     { label: 'Features', href: '#features' },
@@ -23,7 +23,7 @@ export default function LandingPage() {
   };
 
   const featuresData = {
-    title: "Why choose Greentech?",
+    title: "Why choose Carbonbox?",
     items: [
       { title: 'Energy Tracking', desc: 'Monitor your resource consumption in real-time across all your facilities.' },
       { title: 'Carbon Offsetting', desc: 'Automated calculations and actionable insights to achieve net-zero.' },
@@ -42,7 +42,7 @@ export default function LandingPage() {
   { 
     category: "Carbon Accounting", 
     title: "Automate your scope 1, 2, and 3 emissions", 
-    description: "Stop relying on manual spreadsheets. Greentech automatically calculates your carbon footprint based on standardized global emission factors.",
+    description: "Stop relying on manual spreadsheets. Carbonbox automatically calculates your carbon footprint based on standardized global emission factors.",
     imageSrc: "/solution-2.png",
     href: "/solutions/carbon-accounting" // The actual route
   }
