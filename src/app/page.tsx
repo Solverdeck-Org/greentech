@@ -3,10 +3,11 @@ import Navbar from '@/components/layout/Navbar';
 import Footer from '@/components/layout/Footer';
 import Hero from '@/components/landing/Hero';
 import Features from '@/components/landing/Features';
+import Solutions from '@/components/landing/Solutions';
 
 export default function LandingPage() {
   // Data definitions
-  const appName = "Greentech";
+  const appName = "Carbonbox";
 
   const navLinks = [
     { label: 'Features', href: '#features' },
@@ -22,13 +23,30 @@ export default function LandingPage() {
   };
 
   const featuresData = {
-    title: "Why choose Greentech?",
+    title: "Why choose Carbonbox?",
     items: [
       { title: 'Energy Tracking', desc: 'Monitor your resource consumption in real-time across all your facilities.' },
       { title: 'Carbon Offsetting', desc: 'Automated calculations and actionable insights to achieve net-zero.' },
       { title: 'Compliance Ready', desc: 'Generate reports instantly to meet global environmental regulations.' },
     ]
   };
+
+  const solutionsData = [
+  { 
+    category: "Energy Management", 
+    title: "Track consumption across all facilities", 
+    description: "Get granular visibility into your energy usage. Our platform integrates directly with your smart meters to provide real-time data and anomaly alerts.",
+    imageSrc: "/solution-1.png",
+    href: "/solutions/energy-management" // The actual route
+  },
+  { 
+    category: "Carbon Accounting", 
+    title: "Automate your scope 1, 2, and 3 emissions", 
+    description: "Stop relying on manual spreadsheets. Carbonbox automatically calculates your carbon footprint based on standardized global emission factors.",
+    imageSrc: "/solution-2.png",
+    href: "/solutions/carbon-accounting" // The actual route
+  }
+];
 
   const footerLinks = [
     { label: 'Privacy Policy', href: '/privacy' },
@@ -43,6 +61,7 @@ export default function LandingPage() {
         <Hero content={heroContent} />
         <Features title={featuresData.title} features={featuresData.items} />
       </main>
+      <Solutions title="Tailored for your industry" subtitle="Everything you need to reach Net-Zero." solutions={solutionsData} />
       <Footer appName={appName} links={footerLinks} />
     </div>
   );
